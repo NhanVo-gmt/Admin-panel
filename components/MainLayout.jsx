@@ -36,6 +36,9 @@ const MainLayout = ({ children }) => {
               <h3 className="flex-1">Single</h3>
               <FaAngleRight />
             </li>
+            <ul>
+              <li></li>
+            </ul>
             <li className="flex justify-start items-center hover:bg-blue-200 hover:text-blue-800 rounded-lg p-2">
               <FaCheckDouble className="mr-2" />
               <h3 className="flex-1">Complex</h3>
