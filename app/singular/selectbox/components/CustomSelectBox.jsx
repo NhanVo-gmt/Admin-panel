@@ -1,9 +1,10 @@
 "use client";
-import React, { useState } from "react";
 
-const cities = ["Tehran", "Shiraz", "Yazd", "Mashad", "Esfashan"];
+import React, { useState } from "react";
 import { BsChevronExpand } from "react-icons/bs";
 import { AiOutlineCheck } from "react-icons/ai";
+
+const cities = ["Tehran", "Shiraz", "Yazd", "Mashad", "Esfashan"];
 
 const CustomSelectBox = () => {
   const [selectedCity, setSelectedCity] = useState("Tehran");
