@@ -35,7 +35,7 @@ const LanguageSelectBox = () => {
                 setOpen(true);
               }}
               className={`flex justify-center items-center gap-x-2 px-2 py-1 hover:bg-sky-200`}
-              key={item}
+              key={item.id}
             >
               <Link href={item.route}>
                 <span className={item.flag}></span>

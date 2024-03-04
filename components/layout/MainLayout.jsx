@@ -22,7 +22,7 @@ const MainLayout = ({ children }) => {
         <aside
           className={`bg-white rounded-lg overflow-hidden transition-all duration-150 ${
             open ? "w-60 p-4" : "w-0"
-          } lg:w-60 lg:p-4`}
+          }`}
         >
           <ul>
             <li className="flex justify-start items-center hover:bg-blue-200 hover:text-blue-800 rounded-lg p-2">
