@@ -18,9 +18,9 @@ const MainLayout = ({ children }) => {
   return (
     <div className="bg-green-200 min-h-screen">
       <aside
-        className={`bg-red-200 top-4 left-4 lg:fixed lg:top-16 lg:left-8 rounded-lg overflow-hidden transition-all duration-150 ${
+        className={`bg-red-200 top-4 left-4 rounded-lg overflow-hidden transition-all duration-150 ${
           open ? "w-60 p-4 block fixed" : "w-0 hidden"
-        } lg:w-60 lg:p-4 z-50`}
+        } lg:w-60 lg:p-4 lg:fixed lg:top-16 lg:left-8 lg:block z-50`}
       >
         <ul>
           <li className="flex justify-start items-center hover:bg-blue-200 hover:text-blue-800 rounded-lg p-2">
@@ -62,7 +62,7 @@ const MainLayout = ({ children }) => {
       </aside>
       <div className={`${open ? "blur-lg" : "blur-0"}`}>
         <MainHeader />
-        <main className="">{children}</main>
+        <main className="lg:ml-[280px]">{children}</main>
       </div>
     </div>
   );
