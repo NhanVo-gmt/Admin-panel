@@ -15,7 +15,7 @@ const MainHeader = () => {
         <div>
           <LanguageSelectBox />
         </div>
-        <div onClick={toggle} className="">
+        <div onClick={toggle} className="lg:hidden">
           <FaBars className="cursor-pointer" />
         </div>
         <div>
