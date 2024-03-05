@@ -55,10 +55,20 @@ const MainSidebar = () => {
               </li>
             </ul>
           </li>
-          <li className="flex justify-start items-center hover:bg-blue-200 hover:text-blue-800 rounded-lg p-2">
-            <FaCheckDouble className="mr-2" />
-            <h3 className="flex-1">Complex</h3>
-            <FaAngleRight />
+          <li className="flex flex-col justify-start items-start hover:bg-blue-200 hover:text-blue-800 rounded-lg p-2">
+            <div className="flex flex-row items-center w-full">
+              <FaCheckDouble className="mr-2" />
+              <h3 className="flex-1">Complex</h3>
+              <FaAngleRight className=""/>
+            </div>
+            <ul className="ml-8 mt-4">
+              <li className="flex justify-center items-center gap-3">
+                <SiSinglestore />
+                <Link href="/complex/horizontal-scrollbar" onClick={closeSideBarHandler}>
+                  Ho-Scrollbar
+                </Link>
+              </li>
+            </ul>
           </li>
           <li className="flex justify-start items-center hover:bg-blue-200 hover:text-blue-800 rounded-lg p-2">
             <SiHelpscout className="mr-2" />
