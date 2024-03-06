@@ -36,7 +36,7 @@ const UserAreaSelectBox = () => {
                 setOpen(true);
               }}
               className={`flex justify-center items-center gap-x-2 px-2 py-1 hover:bg-sky-200`}
-              key={item}
+              key={item.id}
             >
               <Link href={item.route}>{item.label}</Link>
             </div>
