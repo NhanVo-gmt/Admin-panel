@@ -59,4 +59,18 @@ const items = [
       </div>
     ),
   },
+  {
+    title: "Tab 4",
+    content: (
+      <div className="border-2 border-blue-400 rounded-lg p-4">
+        <h1 className="text-3xl text-blue-600">Title Test 4</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          ducimus cupiditate repellendus voluptatibus porro commodi, consequatur
+          amet nam dolorem esse culpa modi ad cum quod ipsam, cumque asperiores
+          placeat obcaecati autem!
+        </p>
+      </div>
+    ),
+  },
 ];
