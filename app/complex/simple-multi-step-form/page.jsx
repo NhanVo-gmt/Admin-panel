@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import SimpleMultiStepForm from './components/SimpleMultiStepForm'
 
@@ -13,4 +15,4 @@ const page = () => {
   )
 }
 
-export default pag
+export default page
