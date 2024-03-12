@@ -13,7 +13,7 @@ export function middleware(request) {
         console.log({method: request.method})
     }
 
-  return NextResponse.redirect(new URL('', request.url))
+//   return NextResponse.redirect(new URL('', request.url))
 }
  
 // See "Matching Paths" below to learn more
