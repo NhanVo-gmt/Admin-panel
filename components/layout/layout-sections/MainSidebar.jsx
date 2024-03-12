@@ -80,6 +80,12 @@ const MainSidebar = () => {
                   Sliders
                 </Link>
               </li>
+              <li className="flex justify-start items-center gap-3">
+                <SiSinglestore />
+                <Link href="/complex/simple-multi-step-form " onClick={closeSideBarHandler}>
+                  Simple M-S-Form
+                </Link>
+              </li>
             </ul>
           </li>
           <li className="flex justify-start items-center hover:bg-blue-200 hover:text-blue-800 rounded-lg p-2">
