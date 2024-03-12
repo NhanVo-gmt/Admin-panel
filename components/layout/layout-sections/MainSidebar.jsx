@@ -76,7 +76,7 @@ const MainSidebar = () => {
               </li>
               <li className="flex justify-start items-center gap-3">
                 <SiSinglestore />
-                <Link href="/complex/slider" onClick={closeSideBarHandler}>
+                <Link href="/complex/slider " onClick={closeSideBarHandler}>
                   Sliders
                 </Link>
               </li>
