@@ -1,4 +1,11 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
+import StepA from "./StepA";
+import StepB from "./StepB";
+import StepC from "./StepC";
+import StepD from "./StepD";
+import StepFinal from "./StepFinal";
 
 const initialFormData = {
   firstName: "",
@@ -62,7 +69,7 @@ const SimpleMultiStepForm = ({ showStepNumber }) => {
         {stepsArray.map((item) => (
           <div
             key={item}
-            className={`w-8 h-8 flex justify-between items-center border-2 border-gray-600 rounded-full cursor-pointer ${
+            className={`w-8 h-8 flex justify-center items-center border-2 border-gray-600 rounded-full cursor-pointer ${
               step === item ? "bg-blue-500" : ""
             }`}
             onClick={() => setStep(item)}
@@ -75,9 +82,41 @@ const SimpleMultiStepForm = ({ showStepNumber }) => {
   };
 
   return (
-  <div className='w-[600px] max-w-full px-6 py-1 mx-auto rounded-lg border-2 border-dotted border-sky-300'>
-    {renderTopStepNumbers()}
-  </div>)
+    <div className="w-[600px] max-w-full px-6 py-1 mx-auto rounded-lg border-2 border-dotted border-sky-300">
+      {renderTopStepNumbers()}
+
+      {step === "A" ? (
+        <StepA
+          formData={formData}
+          handleChangeInput={handleChangeInput}
+          handleNextStep={handleNextStep}
+        />
+      ) : null}
+      {step === "B" ? (
+        <StepB
+          formData={formData}
+          handleChangeInput={handleChangeInput}
+          handleNextStep={handleNextStep}
+        />
+      ) : null}
+      {step === "C" ? (
+        <StepC
+          formData={formData}
+          handleChangeInput={handleChangeInput}
+          handleNextStep={handleNextStep}
+        />
+      ) : null}
+      {step === "D" ? (
+        <StepD
+          formData={formData}
+          handleChangeInput={handleChangeInput}
+          handleNextStep={handleNextStep}
+          handleSubmitFormData={handleSubmitFormData}
+        />
+      ) : null}
+      {step === "Final" ? <StepFinal /> : null}
+    </div>
+  );
 };
 
 export default SimpleMultiStepForm;
