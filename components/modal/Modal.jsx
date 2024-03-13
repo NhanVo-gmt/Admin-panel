@@ -22,7 +22,7 @@ const Modal = ({ isOpen, title = "My Modal", onDismiss, children }) => {
           className="absolute right-4 top-3 text-2xl text-red-600 cursor-pointer"
           onClick={onDismiss}
         />
-        <div className="w-full h-10 flex items-center mb-1 border border-b-gray-300">
+        <div className="w-full h-10 flex items-center mb-1">
             <h1 className="text-xl font-bold">{title}</h1>
         </div>
         {children}
