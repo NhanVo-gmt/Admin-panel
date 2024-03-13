@@ -17,7 +17,7 @@ const StepB = ({
           type="text"
           name="businessName"
           value={formData.businessName}
-          onChange={() => handleChangeInput()}
+          onChange={(e) => handleChangeInput(e)}
           className="w-full outline-none border border-gray-400 px-2 py-1 rounded-lg focus:border-blue-600"
         />
       </div>
@@ -27,7 +27,7 @@ const StepB = ({
           type="text"
           name="businessEmail"
           value={formData.businessEmail}
-          onChange={() => handleChangeInput()}
+          onChange={(e) => handleChangeInput(e)}
           className="w-full outline-none border border-gray-400 px-2 py-1 rounded-lg focus:border-blue-600"
         />
       </div>
@@ -37,7 +37,7 @@ const StepB = ({
           type="text"
           name="businessCity"
           value={formData.businessCity}
-          onChange={() => handleChangeInput()}
+          onChange={(e) => handleChangeInput(e)}
           className="w-full outline-none border border-gray-400 px-2 py-1 rounded-lg focus:border-blue-600"
         />
       </div>
@@ -47,7 +47,7 @@ const StepB = ({
           type="text"
           name="businessWebsite"
           value={formData.businessWebsite}
-          onChange={() => handleChangeInput()}
+          onChange={(e) => handleChangeInput(e)}
           className="w-full outline-none border border-gray-400 px-2 py-1 rounded-lg focus:border-blue-600"
         />
       </div>

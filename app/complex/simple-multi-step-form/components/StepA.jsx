@@ -12,7 +12,7 @@ const StepA = ({ formData, handleChangeInput, handleNextStep }) => {
           type="text"
           name="firstName"
           value={formData.firstName}
-          onChange={() => handleChangeInput()}
+          onChange={(e) => handleChangeInput(e)}
           className="w-full outline-none border border-gray-400 px-2 py-1 rounded-lg focus:border-blue-600"
         />
       </div>
@@ -22,7 +22,7 @@ const StepA = ({ formData, handleChangeInput, handleNextStep }) => {
           type="text"
           name="lastName"
           value={formData.lastName}
-          onChange={() => handleChangeInput()}
+          onChange={(e) => handleChangeInput(e)}
           className="w-full outline-none border border-gray-400 px-2 py-1 rounded-lg focus:border-blue-600"
         />
       </div>

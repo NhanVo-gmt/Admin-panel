@@ -18,7 +18,7 @@ const StepC = ({
           type="number"
           name="incomePerMonth"
           value={formData.incomePerMonth}
-          onChange={() => handleChangeInput()}
+          onChange={(e) => handleChangeInput(e)}
           className="w-full outline-none border border-gray-400 px-2 py-1 rounded-lg focus:border-blue-600"
         />
       </div>
@@ -28,7 +28,7 @@ const StepC = ({
           type="number"
           name="taxPercentage"
           value={formData.taxPercentage}
-          onChange={() => handleChangeInput()}
+          onChange={(e) => handleChangeInput(e)}
           className="w-full outline-none border border-gray-400 px-2 py-1 rounded-lg focus:border-blue-600"
         />
       </div>
