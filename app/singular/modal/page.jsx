@@ -3,6 +3,7 @@ import C01SimpleHelloWorldModal from './components/C01SimpleHelloWorldModal'
 import C02ShowImageModal from './components/C02ShowImageModal'
 import C03VideoPlayerModal from './components/C03VideoPlayerModal'
 import C04ShowChartModal from './components/C04ShowChartModal'
+import C05MoneyTrackingModal from './components/C05MoneyTrackingModal'
 
 const ModalPage = () => {
   return (
@@ -15,6 +16,7 @@ const ModalPage = () => {
         <C02ShowImageModal/>
         <C03VideoPlayerModal />
         <C04ShowChartModal />
+        <C05MoneyTrackingModal />
     </div>
   )
 }
