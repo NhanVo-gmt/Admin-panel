@@ -26,7 +26,7 @@ const StepA = ({ formData, handleChangeInput, handleNextStep }) => {
           className="w-full outline-none border border-gray-400 px-2 py-1 rounded-lg focus:border-blue-600"
         />
       </div>
-      <div className="my-2 flex justify-end items-center">
+      <div className="my-4 flex justify-end items-center">
         <button className="bg-green-400 px-4 py-2 rounded-xl" onClick={() => handleNextStep()}>
             Next
         </button>

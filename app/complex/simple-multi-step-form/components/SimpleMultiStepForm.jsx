@@ -97,6 +97,7 @@ const SimpleMultiStepForm = ({ showStepNumber }) => {
           formData={formData}
           handleChangeInput={handleChangeInput}
           handleNextStep={handleNextStep}
+          handlePrevStep={handlePrevStep}
         />
       ) : null}
       {step === "C" ? (
@@ -104,6 +105,7 @@ const SimpleMultiStepForm = ({ showStepNumber }) => {
           formData={formData}
           handleChangeInput={handleChangeInput}
           handleNextStep={handleNextStep}
+          handlePrevStep={handlePrevStep}
         />
       ) : null}
       {step === "D" ? (
@@ -111,6 +113,7 @@ const SimpleMultiStepForm = ({ showStepNumber }) => {
           formData={formData}
           handleChangeInput={handleChangeInput}
           handleNextStep={handleNextStep}
+          handlePrevStep={handlePrevStep}
           handleSubmitFormData={handleSubmitFormData}
         />
       ) : null}
