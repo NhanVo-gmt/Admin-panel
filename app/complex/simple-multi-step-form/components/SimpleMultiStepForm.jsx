@@ -15,6 +15,7 @@ const initialFormData = {
   businessWebsite: "",
   businessEmail: "",
   incomePerMonth: 0,
+  taxPercentage: 0,
   agreeToTerms: false,
 };
 

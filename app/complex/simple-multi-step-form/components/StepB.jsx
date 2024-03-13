@@ -1,6 +1,11 @@
 import React from "react";
 
-const StepB = ({ formData, handleChangeInput, handleNextStep, handlePrevStep }) => {
+const StepB = ({
+  formData,
+  handleChangeInput,
+  handleNextStep,
+  handlePrevStep,
+}) => {
   return (
     <div>
       <h1 className="mt-2 text-xl font-bold text-blue-900">
@@ -48,11 +53,17 @@ const StepB = ({ formData, handleChangeInput, handleNextStep, handlePrevStep }) 
       </div>
 
       <div className="my-4 flex justify-between items-center">
-        <button className="bg-yellow-400 px-4 py-2 rounded-xl" onClick={() => handlePrevStep()}>
-            Prev
+        <button
+          className="bg-yellow-400 px-4 py-2 rounded-xl"
+          onClick={() => handlePrevStep()}
+        >
+          Prev
         </button>
-        <button className="bg-green-400 px-4 py-2 rounded-xl" onClick={() => handleNextStep()}>
-            Next
+        <button
+          className="bg-green-400 px-4 py-2 rounded-xl"
+          onClick={() => handleNextStep()}
+        >
+          Next
         </button>
       </div>
     </div>
