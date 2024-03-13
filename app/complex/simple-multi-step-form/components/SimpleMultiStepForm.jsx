@@ -113,7 +113,6 @@ const SimpleMultiStepForm = ({ showStepNumber }) => {
         <StepD
           formData={formData}
           handleChangeInput={handleChangeInput}
-          handleNextStep={handleNextStep}
           handlePrevStep={handlePrevStep}
           handleSubmitFormData={handleSubmitFormData}
         />
