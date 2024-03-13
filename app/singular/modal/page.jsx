@@ -6,6 +6,7 @@ import C04ShowChartModal from './components/C04ShowChartModal'
 import C05MoneyTrackingModal from './components/C05MoneyTrackingModal'
 import C06ConfirmationModal from './components/C06ConfirmationModal'
 import C07InputFormModal from './components/C07InputFormModal'
+import C08TimerCountdownModal from './components/C08TimerCountdownModal'
 
 const ModalPage = () => {
   return (
@@ -21,6 +22,7 @@ const ModalPage = () => {
         <C05MoneyTrackingModal />
         <C06ConfirmationModal />
         <C07InputFormModal />
+        <C08TimerCountdownModal />
     </div>
   )
 }
