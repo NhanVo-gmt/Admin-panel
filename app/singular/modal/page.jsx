@@ -5,6 +5,7 @@ import C03VideoPlayerModal from './components/C03VideoPlayerModal'
 import C04ShowChartModal from './components/C04ShowChartModal'
 import C05MoneyTrackingModal from './components/C05MoneyTrackingModal'
 import C06ConfirmationModal from './components/C06ConfirmationModal'
+import C07InputFormModal from './components/C07InputFormModal'
 
 const ModalPage = () => {
   return (
@@ -19,6 +20,7 @@ const ModalPage = () => {
         <C04ShowChartModal />
         <C05MoneyTrackingModal />
         <C06ConfirmationModal />
+        <C07InputFormModal />
     </div>
   )
 }
